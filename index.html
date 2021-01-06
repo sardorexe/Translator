@@ -15,15 +15,22 @@
   </head>
   <body>
     <div class="container">
-      <div class="row mt-5 d-flex text-center justify-content-center">
-        <h3 class="pb-4">Lotincha - Кирилча</h3>
+      <div id="form" class="row d-flex text-center align-items-center flex-column justify-content-center">
+        <h3 class="pb-4">Lotincha - Кирилча, Кирилча - Lotincha</h3>
         <input
           id="matn"
           type="text"
-          class="input-1 mb-5 col-sm-12"
+          class="input-1 mb-5 col-7"
           placeholder="Matn Kiriting !"
         />
-        <button class="input-2 btn" onclick="changer()">O'gir !</button>
+        <div id="btns" class="col-md-12 col-6 ">
+          <button class="input-2 btn" onclick="kirilChanger()">
+            Кирилча
+          </button>
+          <button class="input-3 btn" onclick="lotChanger()">
+            Lotincha
+          </button>
+        </div>
         <footer class="col-sm-12">
           <p>DATA Learning Centre, Developer : sardorexe</p>
         </footer>

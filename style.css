@@ -3,13 +3,18 @@ h3 {
   user-select: none;
   text-transform: uppercase;
   font-family: "Fira Sans", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 20px;
   color: #0984e3;
 }
 
 input {
   padding-top: 15px;
-  padding-bottom: 300px;
+  padding-bottom: 200px;
+}
+
+#form {
+  margin-top: 60px;
 }
 
 ::placeholder {
@@ -32,45 +37,23 @@ input {
   box-shadow: 0px 0px 40px 5px #0984e3;
 }
 
+#btns {
+  margin-top: 0px;
+  margin-bottom: 100px;
+}
 
 .input-2 {
-  margin-bottom: 60px;
+  /* margin-right: 10px; */
+  margin-bottom: 20px;
   margin-top: 20px;
   border: none;
   color: #0984e3;
   background-color: #fff;
-  height: 50px;
-  width: 20%;
   text-transform: uppercase;
   font-weight: 500;
   position: relative;
   transition: all 0.5s ease;
-  transition-delay: 1s;
-}
-
-.input-2::before {
-  content: "";
-  width: 100%;
-  height: 1%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  border-left: 1px solid #0984e3;
-  border-bottom: 1px solid #0984e3;
-  transition: all 0.5s ease;
-  transition-delay: 0.5s;
-}
-
-.input-2::after {
-  content: "";
-  width: 100%;
-  height: 1%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  border-right: 1px solid #0984e3;
-  border-top: 1px solid #0984e3;
-  transition: all 0.5s ease;
+  /* transition-delay: 1s; */
 }
 
 .input-2:hover {
@@ -79,16 +62,27 @@ input {
   color: #fff;
 }
 
-.input-2:hover::before {
-  height: 100%;
+.input-3 {
+  /* margin-left: 10px; */
+  /* margin-bottom: 60px; */
+  border: none;
+  color: #0984e3;
+  background-color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  position: relative;
+  transition: all 0.5s ease;
+  /* transition-delay: 1s; */
 }
 
-.input-2:hover::after {
-  height: 100%;
+.input-3:hover {
+  box-shadow: 0px 0px 50px 3px #0984e3;
+  background-color: #0984e3;
+  color: #fff;
 }
 
 footer p {
-    color: #056ebe;
-    opacity: 0.6;
-    font-size: 14px;
+  color: #056ebe;
+  opacity: 0.6;
+  font-size: 14px;
 }
