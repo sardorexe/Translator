@@ -12,21 +12,21 @@ let lot = ["yu", "Yu", "ya", "Ya", "yo", "Yo", "sh", "Sh", "ch", "Ch", "o'", "O'
     "F", "s", "S", "m", "M", "i", "I", "t", "T", "b", "B", "q", "Q", "h", "H",
     "g'", "G'", "'", "`"];
 
-let kirilChanger = document.getElementById("kirilChanger");
-let lotinChanger = document.getElementById("lotinChanger");
-
-kirilChanger.addEventListener("click", function () {
-    let area = document.getElementById("text-area").value;
+    //lotindan kirilga o'tkazish funksiyasi
+function kirilChanger() {
+    let satr = document.getElementById("matn").value;
     for (i = 0; i < kiril.length; i++) {
-        area = area.replaceAll(lot[i], kiril[i]);
+        //xar bir harfni alohida almashtiramiz
+        satr = satr.replaceAll(lot[i], kiril[i]);
     }
-    document.getElementById("text-area").value = area;
-})
+    document.getElementById("matn").value = satr;
+}
 
-lotinChanger.addEventListener("click", function () {
-    let area = document.getElementById("text-area").value;
-    for (i = 0; i < lot.length; i++) {
-        area = area.replaceAll(kiril[i], lot[i]);
+function lotChanger() {
+    let satr = document.getElementById("matn").value;
+    for (i = 0; i < kiril.length; i++) {
+        //xar bir harfni alohida almashtiramiz
+        satr = satr.replaceAll(kiril[i], lot[i]);
     }
-    document.getElementById("text-area").value = area;
-})
+    document.getElementById("matn").value = satr;
+}
