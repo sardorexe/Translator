@@ -83,7 +83,7 @@ body {
 }
 
 #translate-page #btns {
-  margin-top: 45px;
+  margin: 45px 10px 0px;
 }
 
 #translate-page #btns .btn {
