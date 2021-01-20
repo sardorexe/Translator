@@ -15,7 +15,7 @@ let lot = ["yu", "Yu", "ya", "Ya", "yo", "Yo", "sh", "Sh", "ch", "Ch", "o'", "O'
 let kirilChanger = document.getElementById("kirilChanger");
 let lotinChanger = document.getElementById("lotinChanger");
 
-kirilChanger.addEventListener("click", function () {
+kirilChanger.addEventListener("click",  () => {
     let area = document.getElementById("text-area").value;
     for (i = 0; i < kiril.length; i++) {
         area = area.replaceAll(lot[i], kiril[i]);
@@ -23,7 +23,7 @@ kirilChanger.addEventListener("click", function () {
     document.getElementById("text-area").value = area;
 })
 
-lotinChanger.addEventListener("click", function () {
+lotinChanger.addEventListener("click", () => {
     let area = document.getElementById("text-area").value;
     for (i = 0; i < lot.length; i++) {
         area = area.replaceAll(kiril[i], lot[i]);

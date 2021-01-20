@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Nunito:wght@600&family=Poppins:wght@600&display=swap");
 body {
-  background-color: #2f3640;
+  background-color: #3d3d3d;
 }
 
 #translate-page {
@@ -35,17 +35,18 @@ body {
 #translate-page #text-area {
   min-height: 200px;
   background-color: transparent;
-  border: 2px solid #1e90ff;
+  border: 2px solid #4b4b4b;
   padding: 20px 20px;
-  color: #1e90ff;
+  color: #fff;
   margin-bottom: 35px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  outline: none;
+  position: relative;
 }
 
 #translate-page #text-area:hover {
-  -webkit-box-shadow: 0px 0px 60px 5px #1e90ff;
-          box-shadow: 0px 0px 60px 5px #1e90ff;
+  border-color: #1e90ff;
 }
 
 #translate-page #text-area:focus {
@@ -85,59 +86,23 @@ body {
   margin: 20px 25px;
   color: #1e90ff;
   border-radius: 0px;
+  border: 2px solid #4b4b4b;
   position: relative;
   padding: 10px 20px;
   font-family: "Nunito", sans-serif;
   overflow: hidden;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
-  -webkit-transition-delay: 0.5s;
-          transition-delay: 0.5s;
-}
-
-#translate-page #btns button::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 10px;
-  height: 10px;
-  content: "";
-  border-top: 2px solid transparent;
-  border-left: 2px solid transparent;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-#translate-page #btns button::after {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  content: "";
-  width: 10px;
-  height: 10px;
-  border-bottom: 2px solid transparent;
-  border-right: 2px solid transparent;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  outline: none;
 }
 
 #translate-page #btns button:hover {
+  border-color: #1e90ff;
+}
+
+#translate-page #btns button:focus {
   background-color: #1e90ff;
-  color: #ced6e0;
-}
-
-#translate-page #btns button:hover::before {
-  border-top-color: #1e90ff;
-  border-left-color: #1e90ff;
-  width: 100%;
-  height: 100%;
-}
-
-#translate-page #btns button:hover::after {
-  border-bottom-color: #1e90ff;
-  border-right-color: #1e90ff;
-  width: 100%;
-  height: 100%;
+  color: #fff;
 }
 
 #translate-page #about {
