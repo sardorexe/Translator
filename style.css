@@ -11,106 +11,109 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#translate-page .label {
   margin-top: 30px;
-}
-
-#translate-page #label {
+  font-size: 24px;
   color: #1e90ff;
-  font-size: medium;
-  padding-bottom: 35px;
-  font-weight: 400;
 }
 
-#translate-page #label b {
-  font-weight: 700;
-  font-size: 40px;
+#translate-page .label b {
+  font-size: 54px;
 }
 
-#translate-page #text-area {
-  min-height: 200px;
+#translate-page #place {
+  margin-top: 20px;
+  min-height: 300px;
   background-color: transparent;
-  border: 2px solid #4b4b4b;
-  padding: 20px 20px;
+  padding: 20px 30px;
+  outline: none;
   color: #fff;
-  margin-bottom: 35px;
+  border: 2px solid #636e72;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#translate-page #place:hover {
+  border-color: #1e90ff;
+}
+
+#translate-page #place:focus {
+  -webkit-box-shadow: 0px 0px 50px 10px #1e90ff;
+          box-shadow: 0px 0px 50px 10px #1e90ff;
+}
+
+#translate-page #place:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+#translate-page #place:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+#translate-page #place:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+#translate-page #place:focus::placeholder {
+  color: transparent;
+}
+
+#translate-page #place::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.473);
+}
+
+#translate-page #place:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.473);
+}
+
+#translate-page #place::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.473);
+}
+
+#translate-page #place::placeholder {
+  color: rgba(255, 255, 255, 0.473);
+}
+
+#translate-page #btns {
+  margin-top: 45px;
+}
+
+#translate-page #btns .btn {
+  color: #636e72;
+  border: 2px solid #636e72;
+  border-radius: 0px;
+  margin: 10px 40px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  outline: none;
-  position: relative;
 }
 
-#translate-page #text-area:hover {
-  border-color: #1e90ff;
-}
-
-#translate-page #text-area:focus {
-  -webkit-box-shadow: 0px 0px 60px 5px #1e90ff;
-          box-shadow: 0px 0px 60px 5px #1e90ff;
-}
-
-#translate-page #text-area::-webkit-input-placeholder {
-  color: #ced6e0;
-  opacity: 0.5;
-  font-family: "Nunito", sans-serif;
-  letter-spacing: 1px;
-}
-
-#translate-page #text-area:-ms-input-placeholder {
-  color: #ced6e0;
-  opacity: 0.5;
-  font-family: "Nunito", sans-serif;
-  letter-spacing: 1px;
-}
-
-#translate-page #text-area::-ms-input-placeholder {
-  color: #ced6e0;
-  opacity: 0.5;
-  font-family: "Nunito", sans-serif;
-  letter-spacing: 1px;
-}
-
-#translate-page #text-area::placeholder {
-  color: #ced6e0;
-  opacity: 0.5;
-  font-family: "Nunito", sans-serif;
-  letter-spacing: 1px;
-}
-
-#translate-page #btns button {
-  margin: 20px 25px;
+#translate-page #btns .btn:hover {
   color: #1e90ff;
-  border-radius: 0px;
-  border: 2px solid #4b4b4b;
-  position: relative;
-  padding: 10px 20px;
-  font-family: "Nunito", sans-serif;
-  overflow: hidden;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-  outline: none;
-}
-
-#translate-page #btns button:hover {
   border-color: #1e90ff;
 }
 
-#translate-page #btns button:focus {
+#translate-page #btns .btn:focus {
   background-color: #1e90ff;
   color: #fff;
 }
 
-#translate-page #about {
-  margin-top: 120px;
+#translate-page footer {
+  margin-top: 50px;
 }
 
-#translate-page #about p {
+#translate-page footer p {
+  color: rgba(255, 255, 255, 0.541);
+}
+
+#translate-page footer p a {
   color: #1e90ff;
-  font-size: 12px;
 }
 /*# sourceMappingURL=style.css.map */

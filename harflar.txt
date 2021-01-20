@@ -12,21 +12,3 @@ let lot = ["yu", "Yu", "ya", "Ya", "yo", "Yo", "sh", "Sh", "ch", "Ch", "o'", "O'
     "F", "s", "S", "m", "M", "i", "I", "t", "T", "b", "B", "q", "Q", "h", "H",
     "g'", "G'", "'", "`"];
 
-    //lotindan kirilga o'tkazish funksiyasi
-function kirilChanger() {
-    let satr = document.getElementById("matn").value;
-    for (i = 0; i < kiril.length; i++) {
-        //xar bir harfni alohida almashtiramiz
-        satr = satr.replaceAll(lot[i], kiril[i]);
-    }
-    document.getElementById("matn").value = satr;
-}
-
-function lotChanger() {
-    let satr = document.getElementById("matn").value;
-    for (i = 0; i < kiril.length; i++) {
-        //xar bir harfni alohida almashtiramiz
-        satr = satr.replaceAll(kiril[i], lot[i]);
-    }
-    document.getElementById("matn").value = satr;
-}
